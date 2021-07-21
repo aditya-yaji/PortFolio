@@ -1,4 +1,3 @@
-const { json } = require("express");
 require("dotenv").config();
 const jsonData = ({ fName, lName, email }, callback) => {
   var data = {
