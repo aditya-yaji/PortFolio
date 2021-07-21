@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
 app.post("/sign", (req, res) => {
   jsonData(req.body, (sData, options) => {
     const request = https.request(
-      process.env.MAILCHIMP_URL,
+      "https://us6.api.mailchimp.com/3.0/lists/d10d76234e",
       options,
       (response) => {
         if (response.statusCode === 200) {
