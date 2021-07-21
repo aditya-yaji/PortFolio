@@ -1,5 +1,5 @@
 require("dotenv").config();
-const jsonData = ({ fName, lName, email }, callback) => {
+const jsonData = ({ fName, msg, email }, callback) => {
   var data = {
     members: [
       {
@@ -7,7 +7,7 @@ const jsonData = ({ fName, lName, email }, callback) => {
         status: "subscribed",
         merge_fields: {
           FNAME: fName,
-          LNAME: lName,
+          MSG: msg,
         },
       },
     ],
