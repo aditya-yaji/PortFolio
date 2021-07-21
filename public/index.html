@@ -3,47 +3,46 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Easy Profile Gray - templatemo</title>
+	<title>Aditya Yaji</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="">
 	<meta name="description" content="">
-	<!-- 
-Easy Profile Template
-http://www.templatemo.com/tm-467-easy-profile
--->
+
 	<!-- stylesheet css -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/templatemo-gray.css">
+
+	<link rel="stylesheet" href="css/templatemo-blue.css">
+	<link rel="stylesheet" href="css/custom.css">
 </head>
 
 <body data-spy="scroll" data-target=".navbar-collapse">
 
-	<!-- preloader section -->
-	<!-- <div class="preloader">
-	<div class="sk-spinner sk-spinner-wordpress">
-       <span class="sk-inner-circle"></span>
-     </div>
-</div> -->
-
 	<!-- header section -->
 	<header>
+		<ul class="sup">
+			<li><a href="#contact">Contact</a></li>
+			<li><a href="#about">Skills</a></li>
+			<li><a href="#exp">Experience</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#">Home</a></li>
+		</ul>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 col-sm-12">
 					<img src="images/tm-easy-profile.jpg" class="img-responsive img-circle tm-border"
 						alt="templatemo easy profile">
 					<hr>
-					<h1 class="tm-title bold shadow">Hi, I am Julia</h1>
-					<h1 class="white bold shadow">Creative Director</h1>
+					<h1 class="tm-title bold shadow">Hi, I am Aditya Yaji</h1>
+					<h1 class="white bold shadow">Software Developer</h1>
 				</div>
 			</div>
 		</div>
 	</header>
 
 	<!-- about and skills section -->
-	<section class="container">
+	<section id="about" class="container">
 		<div class="row">
 			<div class="col-md-6 col-sm-12">
 				<div class="about">
@@ -58,23 +57,29 @@ http://www.templatemo.com/tm-467-easy-profile
 			<div class="col-md-6 col-sm-12">
 				<div class="skills">
 					<h2 class="white">Skills</h2>
-					<strong>PHP MySQL</strong>
-					<span class="pull-right">70%</span>
+					<strong>Java</strong>
+					<span class="pull-right">90%</span>
 					<div class="progress">
-						<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-							aria-valuemax="100" style="width: 70%;"></div>
+						<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+							aria-valuemax="100" style="width: 90%;"></div>
 					</div>
-					<strong>UI/UX Design</strong>
+					<strong>HTML/CSS/Bootstrap</strong>
 					<span class="pull-right">85%</span>
 					<div class="progress">
 						<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="85" aria-valuemin="0"
 							aria-valuemax="100" style="width: 85%;"></div>
 					</div>
-					<strong>Bootstrap</strong>
-					<span class="pull-right">95%</span>
+					<strong>Nodejs</strong>
+					<span class="pull-right">90%</span>
 					<div class="progress">
-						<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0"
-							aria-valuemax="100" style="width: 95%;"></div>
+						<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+							aria-valuemax="100" style="width: 90%;"></div>
+					</div>
+					<strong>Kotlin</strong>
+					<span class="pull-right">70%</span>
+					<div class="progress">
+						<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+							aria-valuemax="100" style="width: 70%;"></div>
 					</div>
 				</div>
 			</div>
@@ -114,7 +119,7 @@ http://www.templatemo.com/tm-467-easy-profile
 	</section>
 
 	<!-- contact and experience -->
-	<section class="container">
+	<section id="exp" class="container">
 		<div class="row">
 			<div class="col-md-4 col-sm-12">
 				<div class="contact">
@@ -123,11 +128,20 @@ http://www.templatemo.com/tm-467-easy-profile
 					<p><i class="fa fa-phone"></i> 010-020-0890</p>
 					<p><i class="fa fa-envelope"></i> easy@company.com</p>
 					<p><i class="fa fa-globe"></i> www.company.com</p>
+					<h4>Sign-Up for My NewsLetter</h4>
+					<form action="/sign" method="POST">
+						<input type="text" name="fName" placeholder="First Name">
+						<input type="text" name="lName" placeholder="Last Name">
+						<input type="email" name="email" placeholder="Email">
+						<br>
+						<p></p>
+						<button class="btn btn-md btn-warning" type="submit">submit</button>
+					</form>
 				</div>
 			</div>
 			<div class="col-md-8 col-sm-12">
 				<div class="experience">
-					<h2 class="white">Experiences</h2>
+					<h2 class="white">Projects</h2>
 					<div class="experience-content">
 						<h4 class="experience-title accent">Website Development</h4>
 						<h5>New Media Company</h5><span></span>
@@ -141,14 +155,14 @@ http://www.templatemo.com/tm-467-easy-profile
 	</section>
 
 	<!-- footer section -->
-	<footer>
+	<footer id="contact">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 col-sm-12">
-					<p>Copyright &copy; 2084 Your Easy Profile</p>
+					<p>Copyright &copy Aditya</p>
 					<ul class="social-icons">
 						<li><a href="#" class="fa fa-facebook"></a></li>
-						<li><a href="#" class="fa fa-google-plus"></a></li>
+						<li><a href="#" class="fa fa-google"></a></li>
 						<li><a href="#" class="fa fa-twitter"></a></li>
 						<li><a href="#" class="fa fa-dribbble"></a></li>
 						<li><a href="#" class="fa fa-github"></a></li>
