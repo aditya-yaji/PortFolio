@@ -16,7 +16,7 @@ const jsonData = ({ fName, lName, email }, callback) => {
   const jData = JSON.stringify(data);
   const options = {
     method: "POST",
-    auth: `sarveshSP:d55614f15d1359a8f3141cd2f6696f01-us6`,
+    auth: `sarveshSP:${process.env.API_KEY}`,
   };
   callback(jData, options);
 };
