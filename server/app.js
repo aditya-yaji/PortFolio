@@ -2,7 +2,7 @@ require("dotenv").config();
 const { json } = require("express");
 const express = require("express");
 const path = require("path");
-const jsonData = require("./mChimp");
+const jsonData = require("./m-chimp");
 const https = require("https");
 const app = express();
 const port = process.env.PORT || 3000;
