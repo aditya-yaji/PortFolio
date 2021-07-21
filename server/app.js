@@ -15,10 +15,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
-  res.sendFile(path.resolve("index.html"));
+  res.sendFile(path.resolve("public/index.html"));
 });
 
-app.post("/signup", (req, res) => {
+app.post("/sign", (req, res) => {
   jsonData(req.body, (sData, options) => {
     const request = https.request(
       process.env.MAILCHIMP_URL,
